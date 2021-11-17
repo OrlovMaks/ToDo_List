@@ -7,10 +7,10 @@ const trashButt = document.querySelector('.trashButt');
 
 
 
-let taskList = [];
+let taskList;
 taskList = JSON.parse(localStorage.getItem('task'));
 
-let itemsElem = []
+let itemsElem = [];
 
 function Tasks(title) {
     this.title = title;
