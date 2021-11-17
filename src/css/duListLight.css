@@ -1,0 +1,122 @@
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+body{
+    background-color: #E2E2E2;
+    font-size: 24px
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.textArea{
+    font-size: 24px;
+    scrollbar-width: none;
+    resize: none;
+    padding: 10px;
+    width: 700px;
+    height: 100px;
+    background: #F7F7F7;
+    box-shadow: inset -18px -18px 30px rgba(245, 243, 243, 0.71), 
+                inset 18px 18px 30px rgba(5, 6, 7, 0.158);
+    border-radius: 20px;
+    border: rgba(253, 245, 230, 0);
+}
+.textArea::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.addBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.addTask{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+    width: 150px;
+    height: 60px;
+    background: #DDDDDD;
+    box-shadow: 10px 10px 20px rgba(22, 27, 29, 0.25), -10px -10px 20px #FAFBFF;
+    border-radius: 20px;
+    border: rgba(253, 245, 230, 0);
+    cursor: pointer;
+}
+.addTask:active{
+    background: #EEEDED;
+    box-shadow: inset -18px -18px 30px #F8F9FB, 
+                inset 18px 18px 30px rgba(212, 213, 213, 0.63);
+}
+li{
+    width: 880px;
+    margin-top: 15px;
+    text-overflow: inherit;
+    padding: 10px;
+    list-style-position: outside;
+    min-height: 100px;
+    background: #EEEDED;
+    box-shadow: inset -18px -18px 30px #F8F9FB, 
+                inset 18px 18px 30px rgba(212, 213, 213, 0.63);
+    border-radius: 20px;
+}
+.doListAdd{
+    display: flex;
+    justify-content: center; 
+}
+.block{
+    display: flex;
+    justify-content: center;
+    
+}
+.tasksArea{
+    scrollbar-width: none;
+    overflow: scroll;
+    overflow-x:hidden;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    width: 900px;
+    height: 400px;
+    background: rgba(135, 128, 128, 0.05);
+    box-shadow: inset -18px -18px 30px rgba(228, 226, 226, 0.3), 
+                inset 18px 18px 30px rgba(22, 27, 29, 0.19);
+    border-radius: 20px;
+}
+.tasksArea::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.area{
+    width: 880px;
+    word-break: break-all;
+}
+.optButt{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.optButt button{
+    cursor: pointer;
+    border: rgba(255, 255, 255, 0);
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.checkButt{
+    transform:scale(1.5);
+    opacity:0.9;
+    cursor:pointer;
+    margin: 25px 0 5px 9px;
+}
+.taskBlock{
+    display: flex;
+    flex-direction: row;
+
+}
+.title.checked{
+    background-color: rgba(161, 252, 153, 0.404);
+    box-shadow: inset -18px -18px 30px rgba(183, 230, 179, 0.404), 
+                inset 18px 18px 30px rgba(95, 124, 92, 0.404);
+}
