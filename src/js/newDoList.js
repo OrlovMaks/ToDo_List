@@ -7,8 +7,8 @@ const trashButt = document.querySelector('.trashButt');
 
 
 
-let taskList;
-!localStorage.taskList ? taskList = [] : taskList = JSON.parse(localStorage.getItem('task'));
+let taskList = [];
+taskList = JSON.parse(localStorage.getItem('task'));
 
 let itemsElem = []
 
