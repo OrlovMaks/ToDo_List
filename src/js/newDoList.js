@@ -5,10 +5,8 @@ const checkButt = document.querySelector('.checkButt');
 const penButt = document.querySelector('.penButt');
 const trashButt = document.querySelector('.trashButt');
 
-
-
 let taskList;
-taskList = JSON.parse(localStorage.getItem('task'));
+!localStorage.taskList ? taskList = [] : taskList = JSON.parse(localStorage.getItem('taskList'));
 
 let itemsElem = [];
 
@@ -41,7 +39,7 @@ const displayTask = () => {
 displayTask();
 
 const updateLocal = () => {
-    localStorage.setItem('task', JSON.stringify(taskList))
+    localStorage.setItem('taskList', JSON.stringify(taskList))
 }
 
 const completeTask = index => {
