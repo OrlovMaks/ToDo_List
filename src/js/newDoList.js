@@ -10,9 +10,11 @@ let taskList;
 
 let itemsElem = [];
 
-function Tasks(title) {
-    this.title = title;
-    this.completed = false;
+class Tasks {
+    constructor(title) {
+        this.title = title;
+        this.completed = false;
+    }
 }
 
 const createTemplate = (task, index) => {
