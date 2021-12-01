@@ -96,7 +96,7 @@ li{
     margin-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 .optButt button{
     cursor: pointer;
@@ -105,10 +105,11 @@ li{
     background-color: rgba(255, 255, 255, 0);
 }
 .checkButt{
+
     transform:scale(1.5);
     opacity:0.9;
     cursor:pointer;
-    margin: 25px 0 5px 9px;
+    margin: 30px 0 5px 9px;
 }
 .taskBlock{
     display: flex;
@@ -119,4 +120,13 @@ li{
     background-color: rgba(161, 252, 153, 0.404);
     box-shadow: inset -18px -18px 30px rgba(183, 230, 179, 0.404), 
                 inset 18px 18px 30px rgba(95, 124, 92, 0.404);
+}
+.trashButt{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.penButt{
+    cursor: pointer;
+    margin-left: 5px;
 }
